@@ -131,6 +131,8 @@ namespace BasicLanguageStructures
     [TestMethod]
     public void DoMyReplace()
     {
+      Assert.Inconclusive("TODO: Implement!");
+
       var str = "Hello World! Good Morning!";
 
       //var replacedString = StringExtensions.MyReplace(str,"!",0,1,"Good afternoon");
