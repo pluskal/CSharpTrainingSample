@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DataGridDataTable
 {
-  public partial class Form1 : Form
+  public partial class GeneratedDataTable : Form
   {
-    public Form1()
+    public GeneratedDataTable()
     {
       InitializeComponent();
     }
@@ -36,8 +36,38 @@ namespace DataGridDataTable
 
     private void button2_Click(object sender, EventArgs e)
     {
-      this.ingredientEntitiesTableAdapter.Insert(Guid.NewGuid(), this.Name.Text, this.Description.Text);
+      this.ingredientEntitiesTableAdapter.Insert(Guid.NewGuid(), this.NameTextBox.Text, this.DescriptionTextBox.Text);
       FillDataTable();
+    }
+
+    private void ingredientEntitiesBindingSource_CurrentChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label2_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Name_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Description_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+
     }
   }
 }

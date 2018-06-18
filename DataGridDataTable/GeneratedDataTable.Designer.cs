@@ -1,6 +1,6 @@
 ﻿namespace DataGridDataTable
 {
-  partial class Form1
+  partial class GeneratedDataTable
   {
     /// <summary>
     /// Required designer variable.
@@ -39,8 +39,8 @@
       this.button1 = new System.Windows.Forms.Button();
       this.label1 = new System.Windows.Forms.Label();
       this.label2 = new System.Windows.Forms.Label();
-      this.Name = new System.Windows.Forms.TextBox();
-      this.Description = new System.Windows.Forms.TextBox();
+      this.NameTextBox = new System.Windows.Forms.TextBox();
+      this.DescriptionTextBox = new System.Windows.Forms.TextBox();
       this.button2 = new System.Windows.Forms.Button();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.ingredientEntitiesBindingSource)).BeginInit();
@@ -61,6 +61,7 @@
       this.dataGridView1.Name = "dataGridView1";
       this.dataGridView1.Size = new System.Drawing.Size(686, 344);
       this.dataGridView1.TabIndex = 0;
+      this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
       // 
       // idDataGridViewTextBoxColumn
       // 
@@ -84,6 +85,7 @@
       // 
       this.ingredientEntitiesBindingSource.DataMember = "IngredientEntities";
       this.ingredientEntitiesBindingSource.DataSource = this._CookBook_DAL_CookBookDbContextDataSet;
+      this.ingredientEntitiesBindingSource.CurrentChanged += new System.EventHandler(this.ingredientEntitiesBindingSource_CurrentChanged);
       // 
       // _CookBook_DAL_CookBookDbContextDataSet
       // 
@@ -112,6 +114,7 @@
       this.label1.Size = new System.Drawing.Size(35, 13);
       this.label1.TabIndex = 2;
       this.label1.Text = "Name";
+      this.label1.Click += new System.EventHandler(this.label1_Click);
       // 
       // label2
       // 
@@ -121,20 +124,23 @@
       this.label2.Size = new System.Drawing.Size(60, 13);
       this.label2.TabIndex = 3;
       this.label2.Text = "Description";
+      this.label2.Click += new System.EventHandler(this.label2_Click);
       // 
-      // Name
+      // NameTextBox
       // 
-      this.Name.Location = new System.Drawing.Point(92, 13);
-      this.Name.Name = "Name";
-      this.Name.Size = new System.Drawing.Size(100, 20);
-      this.Name.TabIndex = 4;
+      this.NameTextBox.Location = new System.Drawing.Point(92, 13);
+      this.NameTextBox.Name = "NameTextBox";
+      this.NameTextBox.Size = new System.Drawing.Size(100, 20);
+      this.NameTextBox.TabIndex = 4;
+      this.NameTextBox.TextChanged += new System.EventHandler(this.Name_TextChanged);
       // 
-      // Description
+      // DescriptionTextBox
       // 
-      this.Description.Location = new System.Drawing.Point(92, 39);
-      this.Description.Name = "Description";
-      this.Description.Size = new System.Drawing.Size(364, 20);
-      this.Description.TabIndex = 5;
+      this.DescriptionTextBox.Location = new System.Drawing.Point(92, 39);
+      this.DescriptionTextBox.Name = "DescriptionTextBox";
+      this.DescriptionTextBox.Size = new System.Drawing.Size(364, 20);
+      this.DescriptionTextBox.TabIndex = 5;
+      this.DescriptionTextBox.TextChanged += new System.EventHandler(this.Description_TextChanged);
       // 
       // button2
       // 
@@ -146,18 +152,19 @@
       this.button2.UseVisualStyleBackColor = true;
       this.button2.Click += new System.EventHandler(this.button2_Click);
       // 
-      // Form1
+      // GeneratedDataTable
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(800, 450);
       this.Controls.Add(this.button2);
-      this.Controls.Add(this.Description);
-      this.Controls.Add(this.Name);
+      this.Controls.Add(this.DescriptionTextBox);
+      this.Controls.Add(this.NameTextBox);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.label1);
       this.Controls.Add(this.button1);
       this.Controls.Add(this.dataGridView1);
+      this.Name = "GeneratedDataTable";
       this.Load += new System.EventHandler(this.Form1_Load);
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.ingredientEntitiesBindingSource)).EndInit();
@@ -179,8 +186,8 @@
     private System.Windows.Forms.Button button1;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.TextBox Name;
-    private System.Windows.Forms.TextBox Description;
+    private System.Windows.Forms.TextBox NameTextBox;
+    private System.Windows.Forms.TextBox DescriptionTextBox;
     private System.Windows.Forms.Button button2;
   }
 }

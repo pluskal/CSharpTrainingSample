@@ -45,11 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="GeneratedDataTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GeneratedDataTable.Designer.cs">
+      <DependentUpon>GeneratedDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManualDataTable.Designer.cs">
+      <DependentUpon>ManualDataTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,8 +64,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_CookBook_DAL_CookBookDbContextDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GeneratedDataTable.resx">
+      <DependentUpon>GeneratedDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualDataTable.resx">
+      <DependentUpon>ManualDataTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
