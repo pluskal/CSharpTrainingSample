@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Repository.Dapper", "DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Repository.Dapper.Tests", "DAL.Repository.Dapper.Tests\DAL.Repository.Dapper.Tests.csproj", "{2769E215-EAC1-4856-91C1-3AD36E099BFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridDataTable", "DataGridDataTable\DataGridDataTable.csproj", "{53902137-2AEB-4BAD-9216-7689DA72A9F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI.WinForms", "UI.WinForms", "{7CCA3601-D851-42F6-AFF4-98BACC4CEB28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,9 +67,16 @@ Global
 		{2769E215-EAC1-4856-91C1-3AD36E099BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2769E215-EAC1-4856-91C1-3AD36E099BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2769E215-EAC1-4856-91C1-3AD36E099BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53902137-2AEB-4BAD-9216-7689DA72A9F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53902137-2AEB-4BAD-9216-7689DA72A9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53902137-2AEB-4BAD-9216-7689DA72A9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53902137-2AEB-4BAD-9216-7689DA72A9F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53902137-2AEB-4BAD-9216-7689DA72A9F5} = {7CCA3601-D851-42F6-AFF4-98BACC4CEB28}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04A8653E-DFE3-408A-846F-9DE41575EFD4}
