@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Repository.EntityFramew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Repository.EntityFramework.Tests", "DAL.Repository.EntityFramework.Tests\DAL.Repository.EntityFramework.Tests.csproj", "{B8BC17BD-0E0D-4683-A1EE-BF1B4B59035B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Repository.Dapper", "DAL.Repository.Dapper\DAL.Repository.Dapper.csproj", "{00DAA636-F990-4283-87CF-563C85B9E8AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Repository.Dapper.Tests", "DAL.Repository.Dapper.Tests\DAL.Repository.Dapper.Tests.csproj", "{2769E215-EAC1-4856-91C1-3AD36E099BFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{B8BC17BD-0E0D-4683-A1EE-BF1B4B59035B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8BC17BD-0E0D-4683-A1EE-BF1B4B59035B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8BC17BD-0E0D-4683-A1EE-BF1B4B59035B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00DAA636-F990-4283-87CF-563C85B9E8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DAA636-F990-4283-87CF-563C85B9E8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DAA636-F990-4283-87CF-563C85B9E8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DAA636-F990-4283-87CF-563C85B9E8AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2769E215-EAC1-4856-91C1-3AD36E099BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2769E215-EAC1-4856-91C1-3AD36E099BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2769E215-EAC1-4856-91C1-3AD36E099BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2769E215-EAC1-4856-91C1-3AD36E099BFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

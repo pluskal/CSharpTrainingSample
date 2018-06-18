@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using DAL.Entities;
 using DAL.Entities.Bases;
 
 namespace DAL.Repository.EntityFramework.Bases
@@ -40,10 +41,11 @@ namespace DAL.Repository.EntityFramework.Bases
       return query.FirstOrDefault(i => i.Id == id);
     }
 
-    public void Insert(TEntity entity)
+    public TEntity Insert(TEntity entity)
     {
       entity.Id = Guid.NewGuid();
       UnitOfWork.Context.Set<TEntity>().Add(entity);
+      return entity;
     }
 
     public void Delete(TEntity entity)
